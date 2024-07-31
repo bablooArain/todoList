@@ -6,7 +6,7 @@ id = 5
 def add():
     newtodo = input("Enter new task: ")
     with open("TodoFile.txt","a") as file:
-        file.write("\n"f'{id}     Undone     {newtodo}"')
+        file.write("\n"f'{id}       Undone      {newtodo}"')
     print("New task added")
     
 
@@ -41,10 +41,6 @@ def show():
     with open("TodoFile.txt","r") as file:
         for line in file:
             print(line)
-
-    # for i in Todo:
-    #     print(f"{i["ID"]}\t{i["status"]}\t{i["task"]}")
-
 
 while True:
     choise = input("Show | Add | Status Edit | Delete | Qiute [s/a/e/d/q] : ")
