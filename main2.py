@@ -1,8 +1,5 @@
-Todo = [{"ID" : 1,"status" : "undone","task" : "programming"},
-       {"ID" : 2,"status" : "undone","task" : "finish book"},
-       {"ID" : 3,"status" : "undone","task" : "learn English"},
-       {"ID" : 4,"status" : "undone","task" : "burn calories"}]
-id = 5
+
+id = 1
 def add():
     newtodo = input("Enter new task: ")
     with open("TodoFile.txt","a") as file:
