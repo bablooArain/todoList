@@ -25,7 +25,7 @@ def edit():
         lines = file.readlines()
         file.seek(0)
         for line in lines:
-            if id in line:
+            if num2 in line:
                   if "undone" in line:
                         line = line.replace("undone","done")
                   else:
